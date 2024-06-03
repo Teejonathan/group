@@ -1,0 +1,167 @@
+body{
+	font-family:  'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f9;
+	color: #333;
+}
+header{
+	background-color: #333;
+	color: white;
+	padding: 1em 0;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+}
+header h1{
+	margin: 0;
+}
+nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+nav ul li{
+	margin: 0 15px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+nav ul li a:hover{
+text-decoration: underline;
+}
+.hero {
+	background-image: url('hero.jpg');
+	background-size: cover;
+	background-position: center;
+	color: white;
+	text-align: center;
+	padding: 100px 20px;
+}
+.hero h2{
+	font-size: 2.5em;
+	margin: 0;
+}
+.hero p{
+	font-size: 1.2em;
+	margin: 10px 0;
+}
+.cta-button{
+	background-color: #0066cc;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 5px;
+}
+.cta-button:hover{
+	background-color: #005bb5;
+}
+.products-section{
+	padding: 40px;
+	text-align: center;
+}
+.product-grid{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+.product-card{
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	width: 200px;
+	text-align: center;
+}
+.product-card img {
+	width: 100%;
+	border-radius: 8px;
+}
+.product-card h3{
+	margin: 10px 0;
+}
+.product-card p {
+	color: #0066cc;
+	font-weight: bold;
+}
+.order-button{
+	background-color: #0066cc;
+	color: white;
+	padding: 10px;
+	border: none;
+	background-color: 5px;
+	cursor: pointer;
+}
+.order-button:hover{
+	background-color: #005bb5;
+}
+form{
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+form label{
+	display: block;
+	margin: 10px 0 5px;
+}
+form input, form textarea{
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+form button{
+	background-color: #0066cc;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+form button:hover{
+	background-color: #005bb5;
+}
+footer{
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 1em 0;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}
+@media (max-width: 768px) {
+	header.container{
+		flex-direction: column;
+		align-items: center;
+	}
+	nav ul{
+		flex-direction: column;
+		align-items: center;
+	}
+	nav ul li{
+		margin: 10px 0;
+	}
+	.products-grid{
+		flex-direction: column;
+		align-items: center;
+	}
+}
